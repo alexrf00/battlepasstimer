@@ -39,7 +39,7 @@ export const games: Game[] = [
     pastSeasons: [
       {
         id: "fn-ch5-s4",
-        name: "Chapter 5 Season 4",
+        name: "Chapter 7 Season 1",
         number: 4,
         startDate: "2025-11-29T02:30:00Z",
         endDate: "2026-03-04T00:00:00Z",
@@ -56,7 +56,7 @@ export const games: Game[] = [
     secondaryColor: "#FF6B00",
     currentSeason: {
       id: "wz-s1-r",
-      name: "Season 1 Reloaded",
+      name: "Warzone B07 Season 1",
       number: 1,
       startDate: "2024-11-14T00:00:00Z",
       endDate: "2025-12-28T00:00:00Z",
@@ -66,10 +66,10 @@ export const games: Game[] = [
     pastSeasons: [
       {
         id: "wz-s6",
-        name: "Season 6",
+        name: "Season 1",
         number: 6,
-        startDate: "2024-09-18T00:00:00Z",
-        endDate: "2025-11-13T00:00:00Z",
+        startDate: "2025-12-04T09:00:00Z",
+        endDate: "2026-02-12T00:00:00Z",
         battlePassTiers: 100,
       },
     ],
@@ -85,8 +85,8 @@ export const games: Game[] = [
       id: "ar-s1",
       name: "Season 1: First Contact",
       number: 1,
-      startDate: "2024-12-10T00:00:00Z",
-      endDate: "2025-12-10T00:00:00Z",
+      startDate: "2025-10-30T09:30:00Z",
+      endDate: "2026-02-05T00:00:00Z",
       battlePassTiers: 50,
       imageUrl: "/arc-raiders-scifi-battle-pass-futuristic.jpg",
     },
