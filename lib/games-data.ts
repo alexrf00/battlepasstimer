@@ -37,14 +37,23 @@ export const games: Game[] = [
       imageUrl: "/fortnite-chapter-6-season-1-battle-pass.jpg",
     },
     pastSeasons: [
-      {
-        id: "fn-ch5-s4",
-        name: "Chapter 7 Season 1",
-        number: 4,
-        startDate: "2025-11-29T02:30:00Z",
-        endDate: "2026-03-04T00:00:00Z",
+  {
+        id: "fn-c6s4",
+        name: "C6 Season 4",
+        number: 37,
+        startDate: "2025-08-07T06:30:00Z", // Approx 6:30 AM UTC
+        endDate: "2025-11-01T05:00:00Z", // Approx 5:00 AM UTC
         battlePassTiers: 100,
       },
+      // Fortnite Chapter 6 Mini Season 2 ("The Simpsons" Tie-in)
+       {
+        id: "fn-c6ms2",
+        name: "C6 Mini-Season 2",
+        number: 0, // Mini-seasons often lack a standard number
+        startDate: "2025-11-01T05:00:00Z",
+        endDate: "2025-11-29T02:00:00Z", // Ended just before Zero Hour event
+        battlePassTiers: 50, // Mini Passes typically have fewer tiers
+      }
     ],
   },
   {
@@ -64,12 +73,12 @@ export const games: Game[] = [
       imageUrl: "/call-of-duty-warzone-season-1-battle-pass-military.jpg",
     },
     pastSeasons: [
-      {
+{
         id: "wz-s6",
-        name: "Season 1",
+        name: "Season 6",
         number: 6,
-        startDate: "2025-12-04T09:00:00Z",
-        endDate: "2026-02-12T00:00:00Z",
+        startDate: "2025-10-09T16:00:00Z", // Approx 9 AM PT start
+        endDate: "2025-12-04T17:00:00Z", // Approx 9 AM PT end on Dec 4th
         battlePassTiers: 100,
       },
     ],
