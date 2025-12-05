@@ -29,7 +29,7 @@ export const games: Game[] = [
     secondaryColor: "#00D4FF",
     currentSeason: {
       id: "fn-ch6-s1",
-      name: "Chapter 6 Season 1",
+      name: "Chapter 7 Season 1",
       number: 1,
       startDate: "2024-12-01T00:00:00Z",
       endDate: "2025-12-21T00:00:00Z",
