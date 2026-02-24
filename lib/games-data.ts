@@ -28,32 +28,31 @@ export const games: Game[] = [
     primaryColor: "#9D4DFF",
     secondaryColor: "#00D4FF",
     currentSeason: {
-      id: "fn-ch6-s1",
+      id: "fn-ch7-s1",
       name: "Chapter 7 Season 1",
       number: 1,
-      startDate: "2024-12-01T00:00:00Z",
-      endDate: "2025-12-21T00:00:00Z",
+      startDate: "2025-11-29T07:00:00Z",
+      endDate: "2026-03-19T06:00:00Z",
       battlePassTiers: 100,
       imageUrl: "/fortnite-chapter-6-season-1-battle-pass.jpg",
     },
     pastSeasons: [
-  {
+      {
         id: "fn-c6s4",
         name: "C6 Season 4",
         number: 37,
-        startDate: "2025-08-07T06:30:00Z", // Approx 6:30 AM UTC
-        endDate: "2025-11-01T05:00:00Z", // Approx 5:00 AM UTC
+        startDate: "2025-08-07T06:30:00Z",
+        endDate: "2025-11-01T05:00:00Z",
         battlePassTiers: 100,
       },
-      // Fortnite Chapter 6 Mini Season 2 ("The Simpsons" Tie-in)
-       {
+      {
         id: "fn-c6ms2",
         name: "C6 Mini-Season 2",
-        number: 0, // Mini-seasons often lack a standard number
+        number: 0,
         startDate: "2025-11-01T05:00:00Z",
-        endDate: "2025-11-29T02:00:00Z", // Ended just before Zero Hour event
-        battlePassTiers: 50, // Mini Passes typically have fewer tiers
-      }
+        endDate: "2025-11-29T07:00:00Z",
+        battlePassTiers: 50,
+      },
     ],
   },
   {
@@ -64,21 +63,29 @@ export const games: Game[] = [
     primaryColor: "#4A5D23",
     secondaryColor: "#FF6B00",
     currentSeason: {
-      id: "wz-s1-r",
-      name: "Warzone B07 Season 1",
-      number: 1,
-      startDate: "2024-11-14T00:00:00Z",
-      endDate: "2025-12-28T00:00:00Z",
+      id: "wz-bo7-s2",
+      name: "Black Ops 7 Season 2",
+      number: 2,
+      startDate: "2026-02-05T18:00:00Z",
+      endDate: "2026-04-01T17:00:00Z",
       battlePassTiers: 100,
       imageUrl: "/call-of-duty-warzone-season-1-battle-pass-military.jpg",
     },
     pastSeasons: [
-{
-        id: "wz-s6",
-        name: "Season 6",
+      {
+        id: "wz-bo6-s6",
+        name: "BO6 Season 6",
         number: 6,
-        startDate: "2025-10-09T16:00:00Z", // Approx 9 AM PT start
-        endDate: "2025-12-04T17:00:00Z", // Approx 9 AM PT end on Dec 4th
+        startDate: "2025-10-09T16:00:00Z",
+        endDate: "2025-12-04T17:00:00Z",
+        battlePassTiers: 100,
+      },
+      {
+        id: "wz-bo7-s1",
+        name: "Black Ops 7 Season 1",
+        number: 1,
+        startDate: "2025-12-04T18:00:00Z",
+        endDate: "2026-02-05T18:00:00Z",
         battlePassTiers: 100,
       },
     ],
@@ -91,15 +98,24 @@ export const games: Game[] = [
     primaryColor: "#1A1A2E",
     secondaryColor: "#E94560",
     currentSeason: {
-      id: "ar-s1",
-      name: "Season 1: First Contact",
-      number: 1,
-      startDate: "2025-10-30T09:30:00Z",
-      endDate: "2026-02-05T00:00:00Z",
+      id: "ar-s2",
+      name: "Season 2",
+      number: 2,
+      startDate: "2025-12-22T10:00:00Z",
+      endDate: "2026-02-22T10:00:00Z",
       battlePassTiers: 50,
       imageUrl: "/arc-raiders-scifi-battle-pass-futuristic.jpg",
     },
-    pastSeasons: [],
+    pastSeasons: [
+      {
+        id: "ar-s1",
+        name: "Season 1: First Contact",
+        number: 1,
+        startDate: "2025-10-30T09:30:00Z",
+        endDate: "2025-12-16T10:00:00Z",
+        battlePassTiers: 50,
+      },
+    ],
   },
 ]
 
