@@ -46,19 +46,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const publisherId = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID
-  
   return (
     <html lang="en" className="dark">
       <head>
-        {/* Google AdSense - Only loads if Publisher ID is configured */}
-        {publisherId && publisherId !== "ca-pub-XXXXXXXXXXXXXXXX" && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${publisherId}`}
-            crossOrigin="anonymous"
-          />
-        )}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4171287156243193"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${inter.className} ${geistMono.variable} font-sans antialiased`}>
         {children}
