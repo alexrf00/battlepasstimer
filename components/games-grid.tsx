@@ -74,8 +74,8 @@ export function GamesGrid() {
               {sortedGames.map((game, index) => (
                 <div key={game.id}>
                   <GameCard game={game} />
-                  {/* Mobile in-feed ad after second card */}
-                  {index === 1 && (
+                  {/* Mobile in-feed ad after fourth card */}
+                  {index === 3 && (
                     <div className="mt-6 lg:hidden flex justify-center">
                       <AdSlot size="rectangle" />
                     </div>

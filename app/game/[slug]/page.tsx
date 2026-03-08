@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${game.name} Battle Pass Countdown - Pass Timer`,
-    description: `Track the ${game.currentSeason.name} battle pass countdown for ${game.name}. ${game.currentSeason.battlePassTiers} tiers to unlock.`,
+    description: `${game.description} Track the ${game.currentSeason.name} battle pass countdown — ${game.currentSeason.battlePassTiers} tiers to unlock before the season ends.`,
     openGraph: {
       title: `${game.name} Battle Pass Countdown`,
-      description: `Track the ${game.currentSeason.name} battle pass countdown.`,
+      description: `Track the ${game.currentSeason.name} battle pass countdown for ${game.name}. ${game.currentSeason.battlePassTiers} tiers to unlock.`,
     },
   }
 }

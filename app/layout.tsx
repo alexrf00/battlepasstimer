@@ -9,17 +9,38 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "BattlePassTimer - Battle Pass Countdown Tracker",
-  description: "Never miss a battle pass reset. Track end dates for Fortnite, Warzone, Arc Raiders and more.",
-  keywords: ["battle pass", "countdown", "fortnite", "warzone", "gaming", "season tracker", "battlepasstimer"],
+  description:
+    "Never miss a battle pass reset. Real-time countdown timers for Fortnite, Valorant, Apex Legends, Warzone, Destiny 2, Rocket League, Marvel Rivals, Diablo 4, The Finals, and Arc Raiders.",
+  keywords: [
+    "battle pass",
+    "countdown",
+    "fortnite",
+    "valorant",
+    "apex legends",
+    "warzone",
+    "destiny 2",
+    "rocket league",
+    "marvel rivals",
+    "diablo 4",
+    "the finals",
+    "arc raiders",
+    "gaming",
+    "season tracker",
+    "battlepasstimer",
+    "battle pass timer",
+    "season end date",
+  ],
   openGraph: {
     title: "BattlePassTimer - Battle Pass Countdown Tracker",
-    description: "Never miss a battle pass reset. Track end dates for Fortnite, Warzone, Arc Raiders and more.",
+    description:
+      "Never miss a battle pass reset. Real-time countdown timers for Fortnite, Valorant, Apex Legends, Warzone, and 6 more games.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "BattlePassTimer - Battle Pass Countdown Tracker",
-    description: "Never miss a battle pass reset.",
+    description:
+      "Real-time battle pass countdown timers for Fortnite, Valorant, Apex Legends, Warzone, and more.",
   },
   icons: {
     icon: [

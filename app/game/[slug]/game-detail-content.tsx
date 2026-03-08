@@ -8,7 +8,9 @@ import { ProgressBar } from "@/components/progress-bar"
 import { AdSlot } from "@/components/ad-slot"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowLeft, Share2, Calendar, Trophy, Clock } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
+import { ArrowLeft, Share2, Calendar, Trophy, Clock, Info, Lightbulb, BookOpen, History } from "lucide-react"
 
 interface GameDetailContentProps {
   game: Game
@@ -82,6 +84,21 @@ export function GameDetailContent({ game }: GameDetailContentProps) {
                 <p className="text-xl font-medium" style={{ color: game.secondaryColor }}>
                   {game.currentSeason.name}
                 </p>
+                {(game.genre || game.developer) && (
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {game.genre && (
+                      <Badge variant="secondary">{game.genre}</Badge>
+                    )}
+                    {game.developer && (
+                      <Badge variant="outline">{game.developer}</Badge>
+                    )}
+                    {game.platforms?.map((platform) => (
+                      <Badge key={platform} variant="outline" className="text-xs">
+                        {platform}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
 
@@ -173,11 +190,78 @@ export function GameDetailContent({ game }: GameDetailContentProps) {
               )}
             </div>
 
-            {/* Past seasons */}
+            {/* About Game section */}
+            <Card className="glass mb-8">
+              <CardHeader>
+                <CardTitle className="text-foreground flex items-center gap-2">
+                  <Info className="w-5 h-5" style={{ color: game.primaryColor }} />
+                  About {game.name}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  {game.description}
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Battle Pass Overview section */}
+            {game.battlePassDescription && (
+              <Card className="glass mb-8">
+                <CardHeader>
+                  <CardTitle className="text-foreground flex items-center gap-2">
+                    <BookOpen className="w-5 h-5" style={{ color: game.primaryColor }} />
+                    Battle Pass Overview
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {game.battlePassDescription}
+                  </p>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Tips & Strategy section */}
+            {game.tips && game.tips.length > 0 && (
+              <Card className="glass mb-8">
+                <CardHeader>
+                  <CardTitle className="text-foreground flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5" style={{ color: game.secondaryColor }} />
+                    Tips & Strategy
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ol className="space-y-3">
+                    {game.tips.map((tip, index) => (
+                      <li key={index} className="flex gap-3">
+                        <span
+                          className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold"
+                          style={{
+                            backgroundColor: `${game.primaryColor}20`,
+                            color: game.primaryColor,
+                          }}
+                        >
+                          {index + 1}
+                        </span>
+                        <span className="text-muted-foreground">{tip}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </CardContent>
+              </Card>
+            )}
+
+            <Separator className="mb-8" />
+
+            {/* Season History */}
             {game.pastSeasons.length > 0 && (
               <Card className="glass">
                 <CardHeader>
-                  <CardTitle className="text-foreground">Past Seasons</CardTitle>
+                  <CardTitle className="text-foreground flex items-center gap-2">
+                    <History className="w-5 h-5" style={{ color: game.primaryColor }} />
+                    Season History
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">

@@ -14,11 +14,14 @@ export function Footer() {
               <span className="text-lg font-bold gradient-text">BattlePassTimer</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-md">
-              Never miss a battle pass reset. Track end dates for your favorite games.
+              Track battle pass countdowns for Fortnite, Valorant, Apex Legends, Warzone, and 6 more games.
             </p>
           </div>
 
           <div className="flex gap-4">
+            <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              About
+            </Link>
             <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Privacy Policy
             </Link>

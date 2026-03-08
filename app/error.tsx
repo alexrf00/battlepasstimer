@@ -64,6 +64,24 @@ export default function Error({
                 Warzone
               </Link>
               <Link
+                href="/game/apex-legends"
+                className="text-sm px-4 py-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              >
+                Apex Legends
+              </Link>
+              <Link
+                href="/game/valorant"
+                className="text-sm px-4 py-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              >
+                Valorant
+              </Link>
+              <Link
+                href="/game/marvel-rivals"
+                className="text-sm px-4 py-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              >
+                Marvel Rivals
+              </Link>
+              <Link
                 href="/game/arc-raiders"
                 className="text-sm px-4 py-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
               >

@@ -23,8 +23,8 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
-            Real-time countdown timers for Fortnite, Warzone, Arc Raiders, and more. Get notified before seasons end so
-            you never lose progress.
+            Real-time countdown timers for Fortnite, Valorant, Apex Legends, Warzone, and more. Get notified before
+            seasons end so you never lose progress.
           </p>
 
           <div className="flex items-center justify-center">
